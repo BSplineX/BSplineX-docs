@@ -45,10 +45,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/BSplineX/BSplineX-docs/',
         },
         blog: {
           showReadingTime: true,
@@ -56,10 +55,9 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/BSplineX/BSplineX-docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,6 +89,18 @@ const config = {
             label: 'Tutorial',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            position: 'left',
+            label: 'Docs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'apiSidebar',
+            position: 'left',
+            label: 'API',
+          },
+          {
             href: 'https://github.com/BSplineX',
             label: 'GitHub',
             position: 'right',
@@ -105,7 +115,15 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial/intro',
+              },
+              {
+                label: 'Docs',
+                to: '/docs/docs/intro',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/intro',
               },
             ],
           },
